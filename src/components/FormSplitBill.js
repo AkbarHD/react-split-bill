@@ -3,6 +3,7 @@ import { useState } from "react";
 export default function FormSplitBill({ selectedFriend, onSplitBill }) {
   const [amount, setAmount] = useState("");
   const [myBill, setMyBill] = useState("");
+  // const myBill = amount ? amount - friendBill : "";
   const friendBill = amount ? amount - myBill : "";
   const [whoIsPaying, setWhoIsPaying] = useState("user");
 
