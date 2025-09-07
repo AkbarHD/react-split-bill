@@ -4,7 +4,6 @@ export default function FormSplitBill({ selectedFriend, onSplitBill }) {
   const [amount, setAmount] = useState("");
   const [myBill, setMyBill] = useState("");
   // const myBill = amount ? amount - friendBill : "";
-  // const myBill = amount ? amount - friendBill : "";
   const friendBill = amount ? amount - myBill : "";
   const [duit, setDuit] = useState(0);
   const [whoIsPaying, setWhoIsPaying] = useState("user");
